@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+main{
+    max-width: fit-content;
+    margin: auto;
+}
+img{
+    width: auto;
+    height: auto;
+}
+.container {
+    width: 30rem;
+    height: 30rem;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+   
+}
+@keyframes colors{
+    0% {background-color:#ff0000 ;}
+    25% {background-color: #ff7878;}
+    50% {background-color: #ffffff;}
+    75% {background-color: #74d680;}
+    100% {background-color: #378b29;}
+}
+.photo img{
+    width: 15rem;
+    height: 15rem;
+}
